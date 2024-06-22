@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 009</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="" method="get" autocomplete="on">
+        <p>
+            <!-- ONINPUT: EXECUTA A AÇÃO SEMPRE QUE O USUÁRIO DIGITA NO CAMPO
+             INNERHTML: MOSTRA O RESULTADO DENTRO DO ELEMENTO HTML (OU SEJA, É DENTRO DO 
+             HTML)
+
+             NUMBER: TRANSFORMA O ID EM NUMERO
+
+             VALUE: OBTÉM OU DEFINE O VALOR  DE UM ELEMENTO 
+             DE FORMULÁRIO -->
+                <label for="inum">Numero:</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ivalor.innerHTML = Number(inum.value)">
+                <output id="ivalor">5</output>
+            
+            <p>
+                <input type="submit" value="Enviar >">
+        </p>
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
